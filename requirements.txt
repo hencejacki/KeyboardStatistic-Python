@@ -1,0 +1,9 @@
+docutils==0.21.2
+evdev==1.7.1
+lockfile==0.12.2
+pathlib==1.0.1
+pynput==1.7.7
+python-daemon==3.0.1
+python-xlib==0.33
+setuptools==70.0.0
+six==1.16.0
