@@ -4,6 +4,7 @@ import os
 
 OUTPUT_DIR = ".ks"
 LOG_OUTPUT = os.path.join(str(Path.home()), OUTPUT_DIR, "ks.log")
+DB_OUTPUT = os.path.join(str(Path.home()), OUTPUT_DIR, "db", "key.json")
 
 logging.basicConfig(
     level=logging.DEBUG,

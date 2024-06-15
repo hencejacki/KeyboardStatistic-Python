@@ -12,9 +12,16 @@ def init_dir():
     monthly_out = os.path.join(output_path, "monthly")
     biannually_out = os.path.join(output_path, "biannually")
     yearly_out = os.path.join(output_path, "yearly")
+    db_storage = os.path.join(output_path, "db")
     try:
         if not os.path.exists(output_path):
-            for dir in [output_path, monthly_out, biannually_out, yearly_out]:
+            for dir in [
+                output_path,
+                monthly_out,
+                biannually_out,
+                yearly_out,
+                db_storage,
+            ]:
                 os.mkdir(dir)
         with open(pid_path, "w") as f:
             f.write(str(os.getpid()))

@@ -11,8 +11,15 @@ help:
 	@echo init
 	@echo run
 	@echo help
+	@echo clean
 
 clean:
 	pip uninstall $(PROJECT_NAME)
 
-.PHONY: init run help clean
+exit:
+	@kill -9 `cat ~/.ks/ks.pid`
+
+test:
+	python tests/test_monitor.py
+
+.PHONY: init run help clean exit test
